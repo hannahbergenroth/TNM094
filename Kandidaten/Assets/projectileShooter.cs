@@ -6,7 +6,7 @@ public class projectileShooter : MonoBehaviour
     Rigidbody rb;
     GameObject prefab, projectile;
     Vector3 startPos, endPos, direction;
-    float shootPower = 10f;
+    float shootPower = 11f;
 
 
     void Start()
