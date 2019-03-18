@@ -16,7 +16,7 @@ public class Destroy : MonoBehaviour {
 
 	void OnCollisionEnter(Collision coll)
 	{
-		if(coll.gameObject.tag == "Player")
+		if(coll.gameObject.tag == "projectile" || coll.gameObject.tag == "projectile1")
 		{
 			Destroy(coll.gameObject);
 		}

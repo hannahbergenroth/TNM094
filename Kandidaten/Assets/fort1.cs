@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class fort : MonoBehaviour {
+public class fort1 : MonoBehaviour {
 
 	public float startHealth;
 	public float health = 100f;
@@ -38,9 +38,9 @@ public class fort : MonoBehaviour {
 
 	void OnCollisionEnter(Collision coll){
 
-		if(coll.gameObject.tag == "projectile1")
+		if(coll.gameObject.tag == "projectile")
 		{
-			print("hit fort");
+			print("hit fort 1");
 			Destroy(coll.gameObject);
 			TakeDamage(damage);
 		}
