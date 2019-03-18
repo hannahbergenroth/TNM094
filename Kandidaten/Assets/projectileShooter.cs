@@ -1,15 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-
+﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class projectileShooter : MonoBehaviour
 {
     Rigidbody rb;
     GameObject prefab, projectile;
     Vector3 startPos, endPos, direction;
-    public float shootPower = 0.001f;
+    float shootPower = 10f;
 
 
     void Start()
@@ -19,6 +16,9 @@ public class projectileShooter : MonoBehaviour
 
     void OnMouseDown()
     {
+        if(EventSystem.current.IsPointerOverGameObject())
+        return ;
+
         if (Input.GetMouseButtonDown(0))
         {
             startPos = Input.mousePosition;
@@ -33,10 +33,9 @@ public class projectileShooter : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             endPos = Input.mousePosition;
-            endPos.z = 17f;
+            endPos.z = 14.5f;
             direction = startPos - endPos;
             rb.AddForce(direction * shootPower);
-            rb.AddForce(Vector3.forward * 10f);
         }
     }
 
