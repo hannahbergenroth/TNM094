@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class wall : MonoBehaviour {
+public class Wall : MonoBehaviour {
 
 	Collider col;
 	GameObject prefab, wall;
@@ -14,7 +14,7 @@ public class wall : MonoBehaviour {
 	void OnMouseDown()
 	{
         Debug.Log("hello");
-	
+
 	}
 
     public void PickUpWall()
