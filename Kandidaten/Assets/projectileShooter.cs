@@ -16,6 +16,7 @@ public class projectileShooter : MonoBehaviour
 
     void OnMouseDown()
     {
+
         if(EventSystem.current.IsPointerOverGameObject())
         return ;
 
@@ -25,6 +26,7 @@ public class projectileShooter : MonoBehaviour
             startPos.z = 14.5f;
             projectile = Instantiate(prefab, Camera.main.ScreenToWorldPoint(startPos), Quaternion.identity) as GameObject;
             rb = projectile.GetComponent<Rigidbody>();
+            rb.useGravity=false;
         }
     }
 
@@ -36,6 +38,8 @@ public class projectileShooter : MonoBehaviour
             endPos.z = 14.5f;
             direction = startPos - endPos;
             rb.AddForce(direction * shootPower);
+            rb.useGravity=false;
+
         }
     }
 

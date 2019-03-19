@@ -25,6 +25,7 @@ public class projectileShooter1 : MonoBehaviour
             startPos.z = 14.5f;
             projectile = Instantiate(prefab, Camera.main.ScreenToWorldPoint(startPos), Quaternion.identity) as GameObject;
             rb = projectile.GetComponent<Rigidbody>();
+            rb.useGravity=false;
         }
     }
 
@@ -36,6 +37,7 @@ public class projectileShooter1 : MonoBehaviour
             endPos.z = 14.5f;
             direction = startPos - endPos;
             rb.AddForce(direction * shootPower);
+            rb.useGravity=true;
         }
     }
 
