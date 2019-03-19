@@ -123,9 +123,10 @@ GameObject:
   - component: {fileID: 76337589}
   - component: {fileID: 76337588}
   - component: {fileID: 76337590}
+  - component: {fileID: 76337591}
   m_Layer: 0
   m_Name: TouchCollider (1)
-  m_TagString: Player
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,6 +165,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bff01938bd550457d81605ea6e249bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &76337591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76337587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ce53b71530244ea9f05fd17b113b63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &170076733
@@ -826,6 +838,59 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1137124426}
+--- !u!1 &1157306529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1157306532}
+  - component: {fileID: 1157306531}
+  - component: {fileID: 1157306530}
+  m_Layer: 0
+  m_Name: TouchCollider (2)
+  m_TagString: ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1157306530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157306529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ce53b71530244ea9f05fd17b113b63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1157306531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157306529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 30, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.5}
+--- !u!4 &1157306532
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157306529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1173608005
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,9 +1037,10 @@ GameObject:
   - component: {fileID: 1307263184}
   - component: {fileID: 1307263183}
   - component: {fileID: 1307263182}
+  - component: {fileID: 1307263185}
   m_Layer: 0
   m_Name: TouchCollider
-  m_TagString: projectile1
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1015,6 +1081,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1307263185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1307263181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ce53b71530244ea9f05fd17b113b63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1366309802 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4543317028012188, guid: 365cd7fe09f96420886c5df97f8776c7,
