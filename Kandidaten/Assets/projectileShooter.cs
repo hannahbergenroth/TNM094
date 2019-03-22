@@ -16,7 +16,6 @@ public class projectileShooter : MonoBehaviour
 
     void OnMouseDown()
     {
-
         if(EventSystem.current.IsPointerOverGameObject())
         return ;
 
@@ -35,11 +34,10 @@ public class projectileShooter : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             endPos = Input.mousePosition;
-            endPos.z = 14.5f;
+            endPos.z = 100f;
             direction = startPos - endPos;
             rb.AddForce(direction * shootPower);
             rb.useGravity=true;
-
         }
     }
 
