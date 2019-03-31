@@ -4,6 +4,7 @@ public class Bullet : MonoBehaviour {
 
 	private Transform target;
 	public float speed = 70f;
+	public float explosionRadius = 0f;
 	public void Seek(Transform _target){
 		target = _target;
 
@@ -25,9 +26,11 @@ public class Bullet : MonoBehaviour {
 			return;
 		}
 		transform.Translate(dir.normalized * distanceThisFrame, Space.World);
+		transform.LookAt(target);
 	}
 
 	void HitTarget(){
+		Destroy(target.gameObject);
 		Destroy(gameObject);
 	}
 }
