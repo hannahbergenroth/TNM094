@@ -2,17 +2,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class fort : MonoBehaviour {
 
 	float startHealth;
-	float health = 100f;
+  public float health = 100f;
 	float damage = 34f;
-	// Use this for initialization'
-
 	public Image HealthBar;
 
 	void Start () {
+
 		startHealth = health;
 	}
 
@@ -20,10 +18,12 @@ public class fort : MonoBehaviour {
 
 	}
 
-	void TakeDamage(float amount){
+	public void TakeDamage(float amount){
+
 
 		health -= amount;
 		HealthBar.fillAmount = health/startHealth;
+			print(health);
 		if(health <= 0 )
 		{
 			Die();

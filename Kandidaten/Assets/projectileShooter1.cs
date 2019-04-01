@@ -37,7 +37,7 @@ public class projectileShooter1 : MonoBehaviour
             endPos.z = 14.5f;
             direction = startPos - endPos;
             rb.AddForce(direction * shootPower);
-            rb.useGravity=true;
+            rb.useGravity=false;
         }
     }
 

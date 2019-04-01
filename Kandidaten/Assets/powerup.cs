@@ -14,4 +14,23 @@ public class powerup : MonoBehaviour
 
       }
 
+      void OnCollisionEnter(Collision coll){
+
+    		if(coll.gameObject.name=="TouchCollider")
+        {
+
+          GameObject.Find("Fort").GetComponent<fort1>().TakeDamage1(10f);
+
+
+        }
+        else if(coll.gameObject.name=="TouchCollider (1)")
+        {
+          GameObject.Find("Fort (1)").GetComponent<fort>().TakeDamage(10f);
+        }
+
+
+
+}
+
+
 }
