@@ -4,15 +4,10 @@ using UnityEngine.EventSystems;
 public class projectileShooter : MonoBehaviour
 {
     Rigidbody rb;
-    GameObject prefab, projectile;
+    GameObject projectile;
     Vector3 startPos, endPos, direction;
     float shootPower = 11f;
-
-
-    void Start()
-    {
-        prefab = Resources.Load("projectile") as GameObject;
-    }
+    public GameObject prefab;
 
     void OnMouseDown()
     {
@@ -25,7 +20,6 @@ public class projectileShooter : MonoBehaviour
             startPos.z = 14.5f;
             projectile = Instantiate(prefab, Camera.main.ScreenToWorldPoint(startPos), Quaternion.identity) as GameObject;
             rb = projectile.GetComponent<Rigidbody>();
-            rb.useGravity=false;
         }
     }
 
@@ -37,8 +31,6 @@ public class projectileShooter : MonoBehaviour
             endPos.z = 100f;
             direction = startPos - endPos;
             rb.AddForce(direction * shootPower);
-            rb.useGravity=true;
         }
     }
-
 }
