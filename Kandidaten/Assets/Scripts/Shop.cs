@@ -18,7 +18,7 @@ public class Shop : MonoBehaviour {
 	}
 
 	public void selectMissileTurret(){
-		if(playerStats.money < missileLauncher.cost)
+		if(playerStats.money < standardTurret.cost)
 		{
 			print("NOT ENOUGH MONEY");
 			return;
