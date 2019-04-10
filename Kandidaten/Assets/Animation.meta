@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: a81df035c97da453f95bfa9e301773ba
 folderAsset: yes
+<<<<<<< HEAD
+=======
 timeCreated: 1554150105
 licenseType: Free
+>>>>>>> chris2.0
 DefaultImporter:
   externalObjects: {}
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
