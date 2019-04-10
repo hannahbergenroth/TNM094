@@ -1,9 +1,18 @@
 fileFormatVersion: 2
 guid: df2e380cf49634ba2b54f8da10905811
+<<<<<<< HEAD
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 9
+=======
+timeCreated: 1554034037
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName: {}
+  externalObjects: {}
+  serializedVersion: 4
+>>>>>>> chris2.0
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -21,8 +30,11 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+<<<<<<< HEAD
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+=======
+>>>>>>> chris2.0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -33,7 +45,11 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
+<<<<<<< HEAD
     mipBias: -100
+=======
+    mipBias: -1
+>>>>>>> chris2.0
     wrapU: -1
     wrapV: -1
     wrapW: -1
@@ -45,21 +61,33 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
+=======
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+>>>>>>> chris2.0
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 0
   textureShape: 1
+<<<<<<< HEAD
   singleChannelComponent: 0
+=======
+>>>>>>> chris2.0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
+<<<<<<< HEAD
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
+=======
+  - buildTarget: DefaultTexturePlatform
+>>>>>>> chris2.0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -74,6 +102,7 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape: []
+<<<<<<< HEAD
     bones: []
     spriteID: 
     vertices: []
@@ -83,6 +112,9 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
+=======
+  spritePackingTag: 
+>>>>>>> chris2.0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
