@@ -1,15 +1,10 @@
 fileFormatVersion: 2
 guid: ef04ad62f7a8142249cc659964a76c8a
-<<<<<<< HEAD
-PrefabImporter:
-  externalObjects: {}
-=======
 timeCreated: 1554111126
 licenseType: Free
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 100100000
->>>>>>> chris2.0
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:

@@ -1,16 +1,13 @@
 fileFormatVersion: 2
 guid: 28ce53b71530244ea9f05fd17b113b63
-<<<<<<< HEAD
-=======
 timeCreated: 1551890003
 licenseType: Free
->>>>>>> chris2.0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:
