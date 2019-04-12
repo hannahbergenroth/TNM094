@@ -75,8 +75,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3b2325f2f5994adf9b1a414035dec55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   range: 15
   fireRate: 1
   partToRotate: {fileID: 4660258533064426}
@@ -271,38 +271,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
---- !u!33 &33177956015546758
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1492143912143046}
-  m_Mesh: {fileID: 4300000, guid: ee767d9917288468d92f2c4209ff4cf2, type: 3}
---- !u!33 &33960128563981764
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1115893050077602}
-  m_Mesh: {fileID: 4300002, guid: ee767d9917288468d92f2c4209ff4cf2, type: 3}
---- !u!114 &114578117889726426
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1101549949482084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b2325f2f5994adf9b1a414035dec55, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  range: 15
-  fireRate: 1
-  partToRotate: {fileID: 4660258533064426}
-  turnSpeed: 10
-  bulletPrefab: {fileID: 1517987916706552, guid: c17bfc3601863408488a0b1fc384afff,
-    type: 2}
-  firePoint: {fileID: 4839453387693330}
-=======
->>>>>>> master
