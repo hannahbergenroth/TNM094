@@ -1,24 +1,23 @@
 fileFormatVersion: 2
-guid: ee767d9917288468d92f2c4209ff4cf2
+guid: 162941b85e153894a8c19ce9c0b2d379
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Turret
-    100004: Turret.001
+    100002: crossbow
+    100004: pole
     400000: //RootNode
-    400002: Turret
-    400004: Turret.001
-    2100000: Turret_Metal
-    2100002: Turret_Metal2
-    2100004: Turret_GunMetal
-    2300000: Turret
-    2300002: Turret.001
-    3300000: Turret
-    3300002: Turret.001
-    4300000: Turret.001
-    4300002: Turret
-    9500000: //RootNode
+    400002: crossbow
+    400004: pole
+    2100000: Body
+    2100002: metalFront
+    2100004: cord
+    2300000: crossbow
+    2300002: pole
+    3300000: crossbow
+    3300002: pole
+    4300000: crossbow
+    4300002: pole
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -72,9 +71,9 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
-    normalSmoothAngle: 38
+    normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
@@ -99,7 +98,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -35,12 +35,12 @@ public class Bullet : MonoBehaviour {
 	void HitTarget(){
 		GameObject effectIns = (GameObject) Instantiate(impactEffect,transform.position,transform.rotation);
 		Destroy(effectIns, 2f);
-		if(explosionRadius > 0f){
-			Explode();
-		}else{
+		//if(explosionRadius > 0f){
+		//	Explode();
+		//}//else{
 
-			Damage(target);
-		}
+			//Damage(target);
+		//}
 		Destroy(gameObject);
 	}
 
