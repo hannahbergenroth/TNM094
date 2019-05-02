@@ -39,7 +39,7 @@ public class Turret : MonoBehaviour {
 		Vector3 dir = target.position - transform.position;
 		Quaternion lookRotation = Quaternion.LookRotation(dir);
 		Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
-		partToRotate.rotation = Quaternion.Euler(partToRotate.rotation.x, rotation.y, -90f);
+		partToRotate.rotation = Quaternion.Euler(0f, rotation.y, -90f);
 
 		if(fireCountDown <= 0f)
 		{
@@ -51,7 +51,7 @@ public class Turret : MonoBehaviour {
 	}
 
 	void Shoot(){
-		GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, transform.rotation * Quaternion.Euler(0, 180, 0));
+		GameObject bulletGO = Instantiate(bulletPrefab, firePoint.position, partToRotate.rotation) as GameObject;
 		Bullet bullet = bulletGO.GetComponent<Bullet>();
 
 		if(bullet != null)
