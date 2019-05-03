@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Test
+  m_Name: PolyBrush
   m_Shader: {fileID: 4800000, guid: 4c1a0c3c49f6e984d98db16af6f0768d, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
