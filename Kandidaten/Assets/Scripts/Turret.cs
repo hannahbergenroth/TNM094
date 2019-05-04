@@ -68,7 +68,7 @@ public class Turret : MonoBehaviour {
 		foreach (GameObject enemy in enemies)
 		{
 			float distToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-			if(distToEnemy < shortestDistance)
+			if(distToEnemy > 0f && distToEnemy < shortestDistance) //first comparison wont be needed when introducing team for towers
 			{
 				shortestDistance = distToEnemy;
 				nearestEnemy = enemy;
