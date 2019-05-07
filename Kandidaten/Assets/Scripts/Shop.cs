@@ -5,8 +5,7 @@ public class Shop : MonoBehaviour {
 	public TurretBlueprint standardTurret;
 	public TurretBlueprint missileLauncher;
 
-
-
+    //Buy wooden tower
 	public void selectStandardTurret(){
 		if(playerStats.money < standardTurret.cost)
 		{
@@ -17,8 +16,9 @@ public class Shop : MonoBehaviour {
 		GameObject turret = (GameObject) Instantiate(standardTurret.prefab, new Vector3(5f,0.5f,5f), Quaternion.identity);
 	}
 
+    //Buy stone tower
 	public void selectMissileTurret(){
-		if(playerStats.money < standardTurret.cost)
+		if(playerStats.money < missileLauncher.cost)
 		{
 			print("NOT ENOUGH MONEY");
 			return;
