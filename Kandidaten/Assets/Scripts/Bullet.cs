@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour {
 			Destroy(gameObject);
 			return;
 		}
-
+        
 		Vector3 dir = target.position - transform.position;
 		float distanceThisFrame = speed * Time.deltaTime;
 
@@ -57,6 +57,7 @@ public class Bullet : MonoBehaviour {
 	}
 
 	void Damage(Transform enemy){
+        //add health
 		Destroy(enemy.gameObject);
 	}
 
