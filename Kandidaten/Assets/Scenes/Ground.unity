@@ -771,7 +771,7 @@ GameObject:
   - component: {fileID: 79693188}
   - component: {fileID: 79693187}
   m_Layer: 5
-  m_Name: Turret
+  m_Name: woodOrange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -858,7 +858,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 184128458}
-        m_MethodName: selectStandardTurret
+        m_MethodName: selectWoodOrange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1500,7 +1500,7 @@ GameObject:
   - component: {fileID: 178543745}
   - component: {fileID: 178543744}
   m_Layer: 5
-  m_Name: Turret
+  m_Name: woodGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1587,7 +1587,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1369184178}
-        m_MethodName: selectStandardTurret
+        m_MethodName: selectWoodGray
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1689,10 +1689,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77ec1c13567a5465ba38e6fab10d8cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardTurret:
+  woodOrange:
     cost: 100
     prefab: {fileID: 2101983382, guid: 50de9acc038e86f4c88c8e0ab81edfb2, type: 3}
-  missileLauncher:
+  stoneOrange:
     cost: 250
     prefab: {fileID: 8616697748690469859, guid: 8e272b1622fca03479c8ff2ff2062e18,
       type: 3}
@@ -2911,7 +2911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d000e62c3d7cd42448ef30baddd5453f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyText: {fileID: 546259721}
+  moneyTextOrange: {fileID: 546259721}
 --- !u!114 &546259720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3494,10 +3494,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 714847307}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d000e62c3d7cd42448ef30baddd5453f, type: 3}
+  m_Script: {fileID: 11500000, guid: 60e3f48405002491b808e2dad05b398e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyText: {fileID: 714847311}
+  moneyTextGray: {fileID: 714847311}
 --- !u!114 &714847310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6485,13 +6485,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1369184176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ec1c13567a5465ba38e6fab10d8cb8, type: 3}
+  m_Script: {fileID: 11500000, guid: a5b8a5f7a6b554f448027fcef5198493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardTurret:
+  woodGray:
     cost: 100
     prefab: {fileID: 2101983382, guid: 50de9acc038e86f4c88c8e0ab81edfb2, type: 3}
-  missileLauncher:
+  stoneGray:
     cost: 250
     prefab: {fileID: 8616697748690469859, guid: 8e272b1622fca03479c8ff2ff2062e18,
       type: 3}
@@ -7844,7 +7844,7 @@ GameObject:
   - component: {fileID: 1654044504}
   - component: {fileID: 1654044503}
   m_Layer: 5
-  m_Name: MissileLauncher
+  m_Name: stoneOrange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7931,7 +7931,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 184128458}
-        m_MethodName: selectMissileTurret
+        m_MethodName: selectStoneOrange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9961,7 +9961,7 @@ GameObject:
   - component: {fileID: 2065168923}
   - component: {fileID: 2065168922}
   m_Layer: 5
-  m_Name: MissileLauncher
+  m_Name: stoneGray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10048,7 +10048,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1369184178}
-        m_MethodName: selectMissileTurret
+        m_MethodName: selectStoneGray
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
