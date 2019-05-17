@@ -33,7 +33,7 @@ public class Grid : MonoBehaviour
     }
 
     //for debuggin, creates a visual representation of the grid
-    /*
+    
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
@@ -47,5 +47,5 @@ public class Grid : MonoBehaviour
                 
         }
     }
-    */
+    
 }
