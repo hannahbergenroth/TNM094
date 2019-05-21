@@ -2,7 +2,10 @@
 
 public class Bullet : MonoBehaviour {
 
-	private Transform target;
+    
+
+
+    private Transform target;
 	public float speed = 70f;
 	public float explosionRadius = 0f;
 	public GameObject impactEffect;
@@ -24,25 +27,38 @@ public class Bullet : MonoBehaviour {
 
 		if(dir.magnitude <= distanceThisFrame)
 		{
-			HitTarget();
+			//HitTarget();
 			return;
 		}
 		transform.Translate(dir.normalized * distanceThisFrame, Space.World);
 		transform.LookAt(target);
 
 	}
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+        TowerHealth health;
 
-	void HitTarget(){
-		GameObject effectIns = (GameObject) Instantiate(impactEffect,transform.position,transform.rotation);
-		Destroy(effectIns, 2f);
-		if(explosionRadius > 0f){
-			Explode();
-		}else{
+        if (health = other.GetComponent<TowerHealth>())
+        {
+            health.ChangeHealth(-20);
+        }
+    }
+    void HitTarget()
+    {
+        
+    /*
+    GameObject effectIns = (GameObject) Instantiate(impactEffect,transform.position,transform.rotation);
+    Destroy(effectIns, 2f);
+    if(explosionRadius > 0f){
+        Explode();
+    }else{
 
-			Damage(target);
-		}
-		Destroy(gameObject);
-	}
+        Damage(target);
+    }
+    Destroy(gameObject);
+    */
+    }
 
 	void Explode()
 	{
