@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class fort : MonoBehaviour {
 
-	float startHealth;
-	float health = 100f;
-	float damage = 34f;
+	public float startHealth;
+	public float health = 100f;
+	public float damage = 34f;
 	// Use this for initialization'
 
 	public Image HealthBar;
@@ -20,7 +20,7 @@ public class fort : MonoBehaviour {
 
 	}
 
-	void TakeDamage(float amount){
+	public void TakeDamage(float amount){
 
 		health -= amount;
 		HealthBar.fillAmount = health/startHealth;
@@ -36,14 +36,14 @@ public class fort : MonoBehaviour {
 		Destroy(gameObject);
 	}
 
-	void OnCollisionEnter(Collision coll){
+	/*void OnCollisionEnter(Collision coll){
 
-		if(coll.gameObject.tag == "projectile1")
+		if(coll.gameObject.tag == "arrow")
 		{
-			print("hit fort");
-			Destroy(coll.gameObject);
+			//print("hit fort");
+			//Destroy(coll.gameObject);
 			TakeDamage(damage);
 		}
 
-	}
+	}*/
 }

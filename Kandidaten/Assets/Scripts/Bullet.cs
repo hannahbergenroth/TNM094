@@ -6,9 +6,24 @@ public class Bullet : MonoBehaviour {
 	public float speed = 70f;
 	public float explosionRadius = 0f;
 	public GameObject impactEffect;
+	private float damageAmount;
+
+	public string bulletType;
+	public string enemyName = "Enemy";
+
+	void Start(){
+		if(bulletType == "arrow"){
+			damageAmount = 34f;
+		}
+		else if (bulletType == "ball"){
+			damageAmount = 50f;
+		}
+	}
+
 
 	public void Seek(Transform _target){
 		target = _target;
+
 
 	}
 
@@ -18,7 +33,7 @@ public class Bullet : MonoBehaviour {
 			Destroy(gameObject);
 			return;
 		}
-        
+
 		Vector3 dir = target.position - transform.position;
 		float distanceThisFrame = speed * Time.deltaTime;
 
@@ -32,13 +47,13 @@ public class Bullet : MonoBehaviour {
 
 	}
 
-	void HitTarget(){
+	void HitTarget()
+	{
 		GameObject effectIns = (GameObject) Instantiate(impactEffect,transform.position,transform.rotation);
 		Destroy(effectIns, 2f);
 		if(explosionRadius > 0f){
 			Explode();
 		}else{
-
 			Damage(target);
 		}
 		Destroy(gameObject);
@@ -49,7 +64,7 @@ public class Bullet : MonoBehaviour {
 		Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
 		foreach (Collider collider in colliders)
 		{
-			if(collider.tag == "Enemy")
+			if(collider.tag == enemyName)
 			{
 				Damage(collider.transform);
 			}
@@ -57,8 +72,7 @@ public class Bullet : MonoBehaviour {
 	}
 
 	void Damage(Transform enemy){
-        //add health
-		Destroy(enemy.gameObject);
+        enemy.gameObject.GetComponent<fort>().TakeDamage(damageAmount);
 	}
 
 	void OnDrawGizmosSelected(){

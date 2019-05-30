@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6515912972136965969}
   - component: {fileID: 4963538706105460336}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: canonBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,6 +96,8 @@ MonoBehaviour:
   explosionRadius: 10
   impactEffect: {fileID: 1492959956546498, guid: a0aa7b4d142d541ac865a0e57a0009d2,
     type: 3}
+  enemyName: EnemyOrange
+  damageAmount: 20
 --- !u!135 &6515912972136965969
 SphereCollider:
   m_ObjectHideFlags: 0
