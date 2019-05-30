@@ -2118,7 +2118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridWidth: 60
   gridHeight: 40
-  size: 0
+  size: 4
 --- !u!1001 &421608848
 PrefabInstance:
   m_ObjectHideFlags: 0
