@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 public class MoneyUI : MonoBehaviour {
 
-	public Text moneyTextOrange;
+	public Text moneyText;
 	// Update is called once per frame
 	void Update () {
-		moneyTextOrange.text = playerStats.moneyOrange.ToString();
+		moneyText.text = playerStats.money.ToString();
 	}
 }

@@ -2,27 +2,30 @@
 
 public class Shop : MonoBehaviour {
 
-//orange
-	public TurretBlueprint woodOrange;
-	public TurretBlueprint stoneOrange;
+	public TurretBlueprint standardTurret;
+	public TurretBlueprint missileLauncher;
 
-	public void selectWoodOrange(){
-		if(playerStats.moneyOrange < woodOrange.cost)
+    //Buy wooden tower
+	public void selectStandardTurret(){
+		if(playerStats.money < standardTurret.cost)
 		{
 			print("NOT ENOUGH MONEY");
 			return;
 		}
-		playerStats.moneyOrange -= woodOrange.cost;
-		GameObject turret = (GameObject) Instantiate(woodOrange.prefab, new Vector3(5f,0.5f,5f), Quaternion.identity);
+		playerStats.money -= standardTurret.cost;
+		GameObject turret = (GameObject) Instantiate(standardTurret.prefab, new Vector3(5f,0.5f,5f), Quaternion.identity);
 	}
 
-	public void selectStoneOrange(){
-		if(playerStats.moneyOrange < stoneOrange.cost)
+    //Buy stone tower
+	public void selectMissileTurret(){
+		if(playerStats.money < missileLauncher.cost)
 		{
 			print("NOT ENOUGH MONEY");
 			return;
 		}
-		playerStats.moneyOrange -= stoneOrange.cost;
-		GameObject turret = (GameObject) Instantiate(stoneOrange.prefab, new Vector3(5f,0.5f,5f), Quaternion.identity);
+		playerStats.money -= missileLauncher.cost;
+		GameObject turret = (GameObject) Instantiate(missileLauncher.prefab, new Vector3(5f,0.5f,5f), Quaternion.identity);
 	}
+
+
 }
