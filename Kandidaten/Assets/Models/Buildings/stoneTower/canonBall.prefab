@@ -96,8 +96,8 @@ MonoBehaviour:
   explosionRadius: 10
   impactEffect: {fileID: 1492959956546498, guid: a0aa7b4d142d541ac865a0e57a0009d2,
     type: 3}
+  bulletType: ball
   enemyName: EnemyOrange
-  damageAmount: 20
 --- !u!135 &6515912972136965969
 SphereCollider:
   m_ObjectHideFlags: 0

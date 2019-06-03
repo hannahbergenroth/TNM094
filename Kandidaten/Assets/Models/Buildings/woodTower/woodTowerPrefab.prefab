@@ -4646,7 +4646,7 @@ GameObject:
   - component: {fileID: 2101983384}
   - component: {fileID: 2101983383}
   - component: {fileID: 4569932105144445570}
-  - component: {fileID: 3561402636195262680}
+  - component: {fileID: 4826527522459243426}
   m_Layer: 0
   m_Name: woodTowerPrefab
   m_TagString: Enemy
@@ -4722,7 +4722,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 3, z: 1.5}
   m_Center: {x: 0, y: 1.5, z: 0}
---- !u!114 &3561402636195262680
+--- !u!114 &4826527522459243426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4731,11 +4731,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2101983382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8883c260417dab449f6137eb8259cdd, type: 3}
+  m_Script: {fileID: 11500000, guid: e730bdf0ed96c422eb5d40deaba106ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   replacement: {fileID: 2412903924691301745, guid: b78d915d6f404f046b5a03831c6a2c4f,
     type: 3}
+  startHealth: 100
+  health: 100
+  HealthBar: {fileID: 1145660655691374022}
 --- !u!1 &2117175214
 GameObject:
   m_ObjectHideFlags: 0
@@ -4998,7 +5001,7 @@ PrefabInstance:
     - target: {fileID: 224323615662828228, guid: bd1ed8eb93af940dfa88adf70d18f06e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.88
+      value: 3.21
       objectReference: {fileID: 0}
     - target: {fileID: 224323615662828228, guid: bd1ed8eb93af940dfa88adf70d18f06e,
         type: 3}
@@ -5053,3 +5056,15 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1040655511780623300}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1145660655691374022 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114581100992175618, guid: bd1ed8eb93af940dfa88adf70d18f06e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1040655511780623300}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

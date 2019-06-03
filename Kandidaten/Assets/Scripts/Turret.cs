@@ -22,9 +22,7 @@ public class Turret : MonoBehaviour {
 
 	void Start () {
 		InvokeRepeating("UpdateTarget", 0f, 0.5f);
-
 		//dragging
-
 	}
 
 

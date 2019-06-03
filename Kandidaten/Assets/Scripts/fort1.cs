@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class fort1 : MonoBehaviour {
 
+	public GameObject replacement;
 	float startHealth;
 	float health = 100f;
 	float damage = 34f;
@@ -24,16 +25,20 @@ public class fort1 : MonoBehaviour {
 
 		health -= amount;
 		HealthBar.fillAmount = health/startHealth;
-		if(health <= 0 )
+		if(health <= 0)
 		{
 			Die();
 		}
-
 	}
 
 	void Die()
 	{
-		Destroy(gameObject);
+        //Spawn cracked version of gameobject and despawn original
+        Destroy(gameObject);
+        GameObject inst = GameObject.Instantiate(replacement, transform.position + new Vector3(0f,-0f,0f), transform.rotation * Quaternion.Euler(0f, 0f, 0f));
+
+        //Despawn cracked version after 3s
+        Destroy(inst, 3f);
 	}
 
 	void OnCollisionEnter(Collision coll){
