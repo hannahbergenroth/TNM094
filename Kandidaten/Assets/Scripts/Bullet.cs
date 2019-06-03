@@ -3,7 +3,7 @@
 public class Bullet : MonoBehaviour {
 
 	private Transform target;
-	public float speed = 70f;
+	public float speed = 7f;
 	public float explosionRadius = 0f;
 	public GameObject impactEffect;
 
